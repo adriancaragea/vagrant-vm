@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+	ServerAdmin localhost@localhost.lh
+	ServerName symfony.example
+	DocumentRoot /var/www/symfony.example/
+
+	<Directory /var/www/symfony.example>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>
